@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud9 Workspace | Premium Coworking in Alexandria</title>
+    <meta name="description" content="A comfortable coworking space in Alexandria designed for students, freelancers, entrepreneurs, and remote workers.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="cloud"></i>
+                <span>Cloud9</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#community">Community</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="live-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Checking...</span>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-small">Contact Us</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="close-menu-btn" id="close-menu-btn">
+                <i data-lucide="x"></i>
+            </button>
+            <nav class="mobile-nav-links">
+                <a href="#about" class="mobile-link">About</a>
+                <a href="#services" class="mobile-link">Services</a>
+                <a href="#menu" class="mobile-link">Menu</a>
+                <a href="#gallery" class="mobile-link">Gallery</a>
+                <a href="#community" class="mobile-link">Community</a>
+                <a href="#contact" class="mobile-link">Contact</a>
+                <a href="#contact" class="btn btn-primary mt-4 mobile-link">Book a Seat</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <img src="assets/images/Image (35).jpeg" alt="Cloud9 Workspace Environment" class="hero-image">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <!-- Floating Badges Removed per user request -->
+            <div class="container hero-content position-relative">
+                <div class="hero-text-wrapper">
+                    <span class="badge">Alexandria, Egypt</span>
+                    <h1 class="hero-title">
+                        <span class="reveal-text">Your</span> <span class="reveal-text">Perfect</span> <span class="reveal-text">Place</span> <span class="reveal-text">to</span><br/>
+                        <span class="reveal-text text-gradient">Work,</span> <span class="reveal-text text-gradient">Study</span> <span class="reveal-text text-gradient">&</span> <span class="reveal-text text-gradient">Create.</span>
+                    </h1>
+                    <p class="hero-subtitle">A comfortable coworking space in Alexandria designed for students, freelancers, entrepreneurs, and remote workers.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary magnetic-btn">Contact Us</a>
+                        <a href="#about" class="btn btn-secondary magnetic-btn">Explore the Space</a>
+                    </div>
+                    
+                    <!-- Loved By Social Proof -->
+                    <div class="loved-by">
+                        <div class="avatars">
+                            <img src="assets/images/Image (31).jpeg" alt="Community Member">
+                            <img src="assets/images/Image (36).jpeg" alt="Community Member">
+                            <img src="assets/images/Image (37).jpeg" alt="Community Member">
+                        </div>
+                        <span class="text-muted"><small>Join +500 Creatives & Students</small></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-content gs-reveal-left">
+                        <h2 class="section-title">Where productivity meets comfort.</h2>
+                        <p class="section-description">Cloud9 Workspace is a comfortable and inspiring place where people can work, study, collaborate, and grow. We've designed every corner to maximize your focus while providing a cozy atmosphere that feels like home.</p>
+                        
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number"><span class="counter" data-target="100">0</span>%</span>
+                                <span class="stat-label">Focus Guaranteed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number"><span class="counter" data-target="3">0</span></span>
+                                <span class="stat-label">Creative Zones</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number"><span class="counter" data-target="5">0</span>★</span>
+                                <span class="stat-label">Premium Service</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="split-image gs-reveal-right">
+                        <div class="image-wrapper rounded-card">
+                            <img src="assets/images/Image (31).jpeg" alt="About Cloud9 Workspace" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services bg-secondary" id="services">
+            <div class="container">
+                <div class="section-header text-center gs-reveal-up">
+                    <h2 class="section-title">Everything you need.</h2>
+                    <p class="section-description">Premium amenities tailored for your best work.</p>
+                </div>
+                
+                <div class="grid-layout services-grid">
+                    <div class="card service-card gs-stagger">
+                        <div class="card-icon"><i data-lucide="ticket"></i></div>
+                        <h3>Just 30 EGP / Day</h3>
+                        <p>Skip the monthly commitments. Drop in anytime and get a full day of work done for the price of a coffee.</p>
+                    </div>
+                    <div class="card service-card gs-stagger">
+                        <div class="card-icon"><i data-lucide="wifi"></i></div>
+                        <h3>Fast & Free Wi-Fi</h3>
+                        <p>Lightning-fast internet built for heavy lifting, big downloads, and smooth, lag-free video calls.</p>
+                    </div>
+                    <div class="card service-card gs-stagger">
+                        <div class="card-icon"><i data-lucide="sofa"></i></div>
+                        <h3>Pro Workspaces</h3>
+                        <p>Ergonomic chairs and wide, spacious desks so you can work comfortably for hours without back pain.</p>
+                    </div>
+                    <div class="card service-card gs-stagger">
+                        <div class="card-icon"><i data-lucide="users"></i></div>
+                        <h3>Private Rooms</h3>
+                        <p>Need to host a team or take a confidential call? Rent our fully-equipped meeting rooms by the hour.</p>
+                    </div>
+                    <div class="card service-card gs-stagger">
+                        <div class="card-icon"><i data-lucide="coffee"></i></div>
+                        <h3>Premium Café</h3>
+                        <p>Fuel your focus. Enjoy our selection of artisan coffee, herbal teas, and ice-cold refreshing beverages.</p>
+                    </div>
+                    <div class="card service-card gs-stagger">
+                        <div class="card-icon"><i data-lucide="headphones"></i></div>
+                        <h3>Deep Focus Zones</h3>
+                        <p>No loud chatter, no noise. A library-level quiet space dedicated entirely to deep, uninterrupted work.</p>
+                    </div>
+                </div>
+                
+                <!-- Coming Soon Highlight -->
+                <div class="coming-soon-wrapper gs-reveal-up mt-large">
+                    <div class="card coming-soon-card highlight-card">
+                        <div class="card-content">
+                            <span class="badge badge-accent mb-2">COMING SOON</span>
+                            <h3 class="highlight-title">English Conversation Classes</h3>
+                            <p class="highlight-desc">Practice speaking English in a fun and interactive environment while meeting new people and improving your confidence.</p>
+                        </div>
+                        <div class="card-bg-decoration">
+                            <i data-lucide="message-circle" class="bg-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Cloud9 -->
+        <section class="section why-choose">
+            <div class="container">
+                <div class="split-layout reverse">
+                    <div class="split-content gs-reveal-right">
+                        <h2 class="section-title">Why choose Cloud9?</h2>
+                        <div class="bento-features-grid mt-4">
+                            <div class="feature-card-glass gs-stagger">
+                                <div class="feature-icon-box"><i data-lucide="zap"></i></div>
+                                <h4>Zero Distractions</h4>
+                                <p>Focus on what matters. We've got the quiet space you need to actually get things done.</p>
+                            </div>
+                            <div class="feature-card-glass gs-stagger">
+                                <div class="feature-icon-box"><i data-lucide="wifi"></i></div>
+                                <h4>Blazing Fast Wi-Fi</h4>
+                                <p>No lag, no drops. Just seamless browsing and crystal-clear video calls.</p>
+                            </div>
+                            <div class="feature-card-glass gs-stagger">
+                                <div class="feature-icon-box"><i data-lucide="sofa"></i></div>
+                                <h4>Feels Like Home</h4>
+                                <p>Super comfy chairs, cozy vibes, and all the premium coffee you can drink.</p>
+                            </div>
+                            <div class="feature-card-glass gs-stagger">
+                                <div class="feature-icon-box"><i data-lucide="star"></i></div>
+                                <h4>Starts at 30 EGP</h4>
+                                <p>A premium workspace experience that actually fits your daily budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="split-image gs-reveal-left" style="height: 100%;">
+                        <div class="premium-quote-card">
+                            <img src="assets/images/Image (38).jpeg" alt="Cloud9 Atmosphere" loading="lazy">
+                            <div class="overlay-gradient-dark"></div>
+                            <div class="quote-content-overlay">
+                                <i data-lucide="quote" class="quote-icon-large text-accent mb-3"></i>
+                                <blockquote>
+                                    "A space designed to elevate your work."
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workspace Tour Video -->
+        <section class="section tour bg-secondary" id="tour">
+            <div class="container">
+                <div class="split-layout align-center pb-5 mb-5">
+                    <div class="split-content gs-reveal-right">
+                        <h2 class="section-title">Experience the vibe.</h2>
+                        <p class="section-description mb-4">Take a quick walk through Cloud9 Workspace before you visit. See our creative zones, quiet areas, and premium amenities in action.</p>
+                        
+                        <ul class="feature-list mt-3">
+                            <li class="feature-item">
+                                <i data-lucide="check-circle-2" class="feature-icon"></i>
+                                <span>3 Creative Zones</span>
+                            </li>
+                            <li class="feature-item">
+                                <i data-lucide="check-circle-2" class="feature-icon"></i>
+                                <span>Meeting Rooms</span>
+                            </li>
+                            <li class="feature-item">
+                                <i data-lucide="check-circle-2" class="feature-icon"></i>
+                                <span>Premium Cafe</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="split-image gs-reveal-left">
+                        <div class="video-preview-card">
+                            <img src="assets/images/Image (31).jpeg" alt="Cloud9 Video Tour" loading="lazy">
+                            <div class="overlay-gradient-dark"></div>
+                            <a href="assets/videos/MicrosoftTeams-video.m4v.mp4" class="glightbox video-play-btn" data-gallery="tour">
+                                <div class="play-icon-glow">
+                                    <i data-lucide="play" fill="currentColor"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cafe & Menu Section -->
+        <section class="section cafe-menu" id="menu">
+            <div class="container">
+                <div class="section-header text-center gs-reveal-up mb-5">
+                    <p class="text-accent" style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.75rem; justify-content: center; display: flex; align-items: center; gap: 10px;">
+                        <span style="width: 30px; height: 2px; background: currentColor; display: inline-block;"></span>OUR CAFÉ<span style="width: 30px; height: 2px; background: currentColor; display: inline-block;"></span>
+                    </p>
+                    <h2 class="section-title">Fuel Your Focus</h2>
+                    <p class="section-description mx-auto" style="max-width: 600px;">Premium coffee, refreshing cold drinks, and delicious snacks carefully curated to keep you energized throughout your work session.</p>
+                </div>
+
+                <!-- Signature Drinks Grid (4 cols) -->
+                <div class="signature-drinks-grid gs-reveal-up mb-5 pb-4">
+                    <a href="assets/images/Image (24).jpeg" class="drink-card glightbox" data-gallery="drinks">
+                        <img src="assets/images/Image (24).jpeg" alt="Hot Drink" loading="lazy">
+                        <div class="drink-overlay">
+                            <span class="drink-tag">Perfect Brew</span>
+                            <div class="zoom-icon-circle"><i data-lucide="zoom-in"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="assets/images/Image (22).jpeg" class="drink-card glightbox" data-gallery="drinks">
+                        <img src="assets/images/Image (22).jpeg" alt="Signature Drink 1" loading="lazy">
+                        <div class="drink-overlay">
+                            <span class="drink-tag">Handcrafted</span>
+                            <div class="zoom-icon-circle"><i data-lucide="zoom-in"></i></div>
+                        </div>
+                    </a>
+                    <a href="assets/images/Image (25).jpeg" class="drink-card glightbox" data-gallery="drinks">
+                        <img src="assets/images/Image (25).jpeg" alt="Signature Drink 2" loading="lazy">
+                        <div class="drink-overlay">
+                            <span class="drink-tag">Refreshing</span>
+                            <div class="zoom-icon-circle"><i data-lucide="zoom-in"></i></div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Full Menu Banner -->
+                <div class="full-menu-banner gs-reveal-up mt-large">
+                    <div class="menu-banner-content">
+                        <h3>Explore The Full Menu</h3>
+                        <p>Click on the pages below to view our complete selection of drinks and snacks in full size.</p>
+                        <div class="feature-list mt-4 mb-4" style="justify-content: center; display: flex;">
+                            <div class="feature-item mx-3">
+                                <i data-lucide="coffee" class="feature-icon"></i>
+                                <span>Premium Beans</span>
+                            </div>
+                            <div class="feature-item mx-3">
+                                <i data-lucide="droplet" class="feature-icon"></i>
+                                <span>Fresh Beverages</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-pages-showcase">
+                        <a href="assets/images/menu1.jpeg" class="menu-page-link glightbox" data-gallery="menu">
+                            <img src="assets/images/menu1.jpeg" alt="Menu Page 1" loading="lazy">
+                            <div class="menu-hover-hint"><i data-lucide="maximize-2"></i></div>
+                        </a>
+                        <a href="assets/images/menu2.jpeg" class="menu-page-link glightbox" data-gallery="menu">
+                            <img src="assets/images/menu2.jpeg" alt="Menu Page 2" loading="lazy">
+                            <div class="menu-hover-hint"><i data-lucide="maximize-2"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <div class="section-header text-center gs-reveal-up mb-5">
+                    <p class="text-accent" style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.75rem; justify-content: center; display: flex; align-items: center; gap: 10px;">
+                        <span style="width: 30px; height: 2px; background: currentColor; display: inline-block;"></span>GALLERY<span style="width: 30px; height: 2px; background: currentColor; display: inline-block;"></span>
+                    </p>
+                    <h2 class="section-title">Our Space</h2>
+                    <p class="section-description mx-auto" style="max-width: 600px;">Explore our beautifully designed environment tailored for maximum productivity and comfort.</p>
+                </div>
+                
+                <div class="premium-gallery-grid gs-reveal-up">
+                    <a href="assets/images/Image (29).jpeg" class="gallery-item glightbox" data-gallery="space">
+                        <img src="assets/images/Image (29).jpeg" alt="Cloud9 Gallery Image 1" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <i data-lucide="maximize" class="gallery-icon"></i>
+                        </div>
+                    </a>
+                    <a href="assets/images/Image (30).jpeg" class="gallery-item glightbox" data-gallery="space">
+                        <img src="assets/images/Image (30).jpeg" alt="Cloud9 Gallery Image 2" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <i data-lucide="maximize" class="gallery-icon"></i>
+                        </div>
+                    </a>
+                    <a href="assets/images/Image (32).jpeg" class="gallery-item glightbox" data-gallery="space">
+                        <img src="assets/images/Image (32).jpeg" alt="Cloud9 Gallery Image 3" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <i data-lucide="maximize" class="gallery-icon"></i>
+                        </div>
+                    </a>
+                    <a href="assets/images/Image (33).jpeg" class="gallery-item glightbox" data-gallery="space">
+                        <img src="assets/images/Image (33).jpeg" alt="Cloud9 Gallery Image 4" loading="lazy">
+                        <div class="gallery-hover-overlay">
+                            <i data-lucide="maximize" class="gallery-icon"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="section community bg-secondary" id="community">
+            <div class="container">
+                <div class="section-header text-center gs-reveal-up mb-5">
+                    <p class="text-accent" style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.75rem; justify-content: center; display: flex; align-items: center; gap: 10px;">
+                        <span style="width: 30px; height: 2px; background: currentColor; display: inline-block;"></span>LIFESTYLE<span style="width: 30px; height: 2px; background: currentColor; display: inline-block;"></span>
+                    </p>
+                    <h2 class="section-title">More Than Just a Workspace</h2>
+                    <p class="section-description mx-auto" style="max-width: 600px;">Join a vibrant community of professionals, creatives, and students in a space designed for connection and relaxation.</p>
+                </div>
+                
+                <div class="community-grid align-center">
+                    <div class="community-images gs-reveal-left">
+                        <div class="comm-img-col">
+                            <img src="assets/images/Image (36).jpeg" alt="Community 1" class="rounded-card" loading="lazy">
+                            <img src="assets/images/Image (38).jpeg" alt="Community 3" class="rounded-card" loading="lazy">
+                        </div>
+                        <div class="comm-img-col offset">
+                            <img src="assets/images/Image (39).jpeg" alt="Community 4" class="rounded-card" loading="lazy">
+                            <img src="assets/images/Image (37).jpeg" alt="Community 2" class="rounded-card" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="community-content gs-reveal-right">
+                        <h3 class="mb-4" style="font-size: 2rem; font-weight: 700; color: var(--text-dark);">Everything you need to unwind.</h3>
+                        <p class="mb-4 text-muted">Cloud9 isn't just about hard work. We provide the perfect balance with dedicated zones to relax, network, and recharge your energy.</p>
+                        
+                        <div class="community-tags-wrapper">
+                            <div class="community-tag-card">
+                                <i data-lucide="book-open"></i>
+                                <span>Reading Area</span>
+                            </div>
+                            <div class="community-tag-card">
+                                <i data-lucide="gamepad-2"></i>
+                                <span>Board Games</span>
+                            </div>
+                            <div class="community-tag-card">
+                                <i data-lucide="cup-soda"></i>
+                                <span>Coffee Breaks</span>
+                            </div>
+                            <div class="community-tag-card">
+                                <i data-lucide="network"></i>
+                                <span>Networking</span>
+                            </div>
+                            <div class="community-tag-card">
+                                <i data-lucide="smile"></i>
+                                <span>Relaxing Vibe</span>
+                            </div>
+                            <div class="community-tag-card">
+                                <i data-lucide="heart-handshake"></i>
+                                <span>Friendly Community</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center gs-reveal-up">
+                    <h2 class="section-title">Loved by our community</h2>
+                </div>
+                
+                <div class="grid-layout testimonials-grid">
+                    <div class="card testimonial-card gs-stagger">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="review-text">"Perfect place for studying. The atmosphere is incredibly calm and the chairs are very comfortable for long sessions."</p>
+                    </div>
+                    
+                    <div class="card testimonial-card gs-stagger">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="review-text">"Fast internet and comfortable atmosphere. I get so much work done when I come here. Highly recommend!"</p>
+                    </div>
+                    
+                    <div class="card testimonial-card gs-stagger">
+                        <div class="stars">
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                            <i data-lucide="star" class="star-icon filled"></i>
+                        </div>
+                        <p class="review-text">"My favorite workspace in Alexandria. The community is friendly and the coffee is great. It feels like a second home."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq bg-secondary" id="faq">
+            <div class="container">
+                <div class="section-header text-center gs-reveal-up">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="accordion-wrapper gs-reveal-up">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>What is the daily entry fee?</span>
+                            <i data-lucide="chevron-down" class="accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>The daily entry fee is only 30 EGP, which gives you access to the workspace for the entire day.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Is Wi-Fi included?</span>
+                            <i data-lucide="chevron-down" class="accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Yes! High-speed Wi-Fi is included for all members and daily visitors to ensure a smooth working experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Can I rent a meeting room?</span>
+                            <i data-lucide="chevron-down" class="accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Absolutely. We offer meeting rooms for hourly rental. Please contact us in advance to reserve your slot.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>What are your working hours?</span>
+                            <i data-lucide="chevron-down" class="accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>We are open every day from <strong>9:00 AM to 11:00 PM</strong>. Walk-ins are welcome anytime during our working hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Do I need a reservation?</span>
+                            <i data-lucide="chevron-down" class="accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Walk-ins are always welcome, so you can just drop by anytime! If you'd like to check availability before coming, feel free to give us a call.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="split-layout align-start">
+                    <div class="split-content gs-reveal-right">
+                        <p class="text-accent" style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 30px; height: 2px; background: currentColor; display: inline-block;"></span>GET IN TOUCH
+                        </p>
+                        <h2 class="section-title">We'd love to hear from you.</h2>
+                        <p class="section-description mb-4">Have a question or want to book a tour? Reach out through any of these channels, and we'll get back to you instantly.</p>
+                        
+                        <div class="contact-cards-grid mt-4">
+                            <a href="tel:01225383889" class="premium-contact-card">
+                                <div class="premium-contact-icon"><i data-lucide="phone"></i></div>
+                                <div class="premium-contact-info">
+                                    <h4>Phone</h4>
+                                    <p>0122 538 3889</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://wa.me/201225383889" target="_blank" rel="noopener noreferrer" class="premium-contact-card">
+                                <div class="premium-contact-icon"><i class="fa-brands fa-whatsapp fa-xl"></i></div>
+                                <div class="premium-contact-info">
+                                    <h4>WhatsApp</h4>
+                                    <p>0122 538 3889</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/cloud9_workspace" target="_blank" rel="noopener noreferrer" class="premium-contact-card">
+                                <div class="premium-contact-icon"><i class="fa-brands fa-instagram fa-xl"></i></div>
+                                <div class="premium-contact-info">
+                                    <h4>Instagram</h4>
+                                    <p>@cloud9_workspace</p>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.facebook.com/share/1LH7W8AvmF/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="premium-contact-card">
+                                <div class="premium-contact-icon"><i class="fa-brands fa-facebook-f fa-xl"></i></div>
+                                <div class="premium-contact-info">
+                                    <h4>Facebook</h4>
+                                    <p>Cloud9 Workspace</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-map-wrapper gs-reveal-left" style="width: 100%;">
+                        <div class="premium-map-card">
+                            <div class="map-header">
+                                <div>
+                                    <h4 style="margin:0; font-size: 1.15rem; color: var(--text-dark);">Cloud9 Workspace</h4>
+                                    <p style="margin: 4px 0 0 0; font-size: 0.9rem; color: var(--text-muted);">Alexandria, Egypt</p>
+                                </div>
+                                <a href="https://maps.google.com/?q=31.195097,29.9016285" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem; border-radius: 50px;">
+                                    <i data-lucide="map-pin" style="width:16px;height:16px;margin-right:5px; vertical-align: text-bottom;"></i> Get Directions
+                                </a>
+                            </div>
+                            <div class="map-embed-container">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13645.748135898595!2d29.9016285!3d31.195097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDExJzQyLjQiTiAyOcKwNTQnMDkuOSJF!5e0!3m2!1sen!2seg!4v1699999999999!5m2!1sen!2seg" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo mb-2">
+                        <i data-lucide="cloud"></i>
+                        <span>Cloud9 Workspace</span>
+                    </a>
+                    <p class="text-sm">Alexandria, Egypt</p>
+                    <p class="text-sm">Your perfect place to work, study & create.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/cloud9_workspace" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1LH7W8AvmF/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="https://wa.me/201225383889" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cloud9 Workspace. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201225383889" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

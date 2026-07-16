@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Animations & Initial States for GSAP
+   ========================================================================== */
+
+/* Initial states for elements that will be animated by GSAP */
+/* We rely on GSAP fromTo() to handle initial opacity to prevent blank page fallback */
+.gs-reveal-up,
+.gs-reveal-left,
+.gs-reveal-right,
+.gs-scale-up {
+    /* Styles handled by GSAP */
+}
+
+.gs-stagger {
+    /* Styles handled by GSAP */
+}
+
+/* Micro-interactions that don't need GSAP */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.float-animation {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Sublte pulsing for highlights */
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 0 0 rgba(110, 193, 166, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(110, 193, 166, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(110, 193, 166, 0); }
+}
+
+.highlight-card {
+    animation: pulse-glow 3s infinite;
+}
+
+/* Link underline effect */
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width var(--transition-fast);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
